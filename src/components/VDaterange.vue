@@ -33,16 +33,16 @@
               <div class="v-date-range__content">
                 <v-list v-if="!noPresets" class="mr-4">
                   <v-subheader>{{ presetLabel }}</v-subheader>
-                  <v-list-tile
+                  <v-list-item
                     v-for="(preset, index) in presets"
                     v-model="isPresetActive[index]"
                     :key="index"
                     @click="selectPreset(index)"
                   >
-                    <v-list-tile-content>
+                    <v-list-item-content>
                       {{ preset.label }}
-                    </v-list-tile-content>
-                  </v-list-tile>
+                    </v-list-item-content>
+                  </v-list-item>
                 </v-list>
                 <v-date-picker
                   class="mr-4 v-date-range__picker--start v-date-range__picker"
