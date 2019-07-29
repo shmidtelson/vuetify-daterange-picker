@@ -74,10 +74,10 @@
         </v-card-text>
         <v-card-actions>
           <v-spacer></v-spacer>
-          <v-btn flat @click="reset">{{ buttonResetLabel }}</v-btn>
-          <v-btn flat @click="menu = false">{{ buttonCancelLabel }}</v-btn>
+          <v-btn flat @click="reset">Reset</v-btn>
+          <v-btn flat @click="menu = false">Cancel</v-btn>
           <v-btn @click="applyRange" color="primary" :disabled="!bothSelected"
-            >{{ buttonApplyLabel }}</v-btn
+            >Apply</v-btn
           >
         </v-card-actions>
       </v-card>
@@ -131,19 +131,6 @@ export default {
     presetLabel: {
       type: String,
       default: 'Presets'
-    },
-    // Button labels
-    buttonCancelLabel: {
-      type: String,
-      default: 'Cancel'
-    },
-    buttonApplyLabel: {
-      type: String,
-      default: 'Apply'
-    },
-    buttonResetLabel: {
-      type: String,
-      default: 'Reset'
     },
     /**
      * Following values are all passable to vuetify's own datepicker
