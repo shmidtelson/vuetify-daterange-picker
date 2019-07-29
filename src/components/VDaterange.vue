@@ -6,15 +6,17 @@
       offset-y
       v-bind="menuProps"
     >
-      <v-text-field
-        slot="activator"
-        class="v-date-range__input-field"
-        :value="inputValue"
-        readonly
-        :disabled="disabled"
-        :placeholder="placeholder"
-        v-bind="inputProps"
-      ></v-text-field>
+      <template v-slot:activator="{ on }">
+        <v-text-field
+          v-on="on"
+          class="v-date-range__input-field"
+          :value="inputValue"
+          readonly
+          :disabled="disabled"
+          :placeholder="placeholder"
+          v-bind="inputProps"
+        ></v-text-field>
+      </template>
       <v-card class="v-date-range__menu-content">
         <v-card-text>
           <div
