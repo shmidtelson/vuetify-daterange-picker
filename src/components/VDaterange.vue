@@ -32,7 +32,7 @@
             <v-card-text>
               <div class="v-date-range__content">
                 <v-list v-if="!noPresets" class="mr-4">
-                  <v-subheader>{{ presetLabel }}</v-subheader>
+                  <v-subheader>{{ $t('Presets') }}</v-subheader>
                   <v-list-item
                     v-for="(preset, index) in presets"
                     v-model="isPresetActive[index]"
@@ -76,15 +76,16 @@
         </v-card-text>
         <v-card-actions>
           <v-spacer></v-spacer>
-          <v-btn flat @click="reset">{{ buttonResetLabel }}</v-btn>
-          <v-btn flat @click="menu = false">{{ buttonCancelLabel }}</v-btn>
-          <v-btn @click="applyRange" color="primary" :disabled="!bothSelected">{{ buttonApplyLabel }}</v-btn>
+          <v-btn text @click="reset">{{ $t('Reset') }}</v-btn>
+          <v-btn text @click="menu = false">{{ $t('Cancel')  }}</v-btn>
+          <v-btn @click="applyRange" color="primary" :disabled="!bothSelected">{{ $t('Apply') }}</v-btn>
         </v-card-actions>
       </v-card>
     </v-menu>
   </div>
 </template>
 <script>
+
 import { format, parse, differenceInCalendarDays, addDays } from 'date-fns';
 const isoFormat = 'YYYY-MM-DD';
 const defaultDate = format(new Date(), isoFormat);
@@ -113,38 +114,6 @@ export default {
       type: Boolean,
       default: false
     },
-    // Denotes the Placeholder string for start date.
-    startLabel: {
-      type: String,
-      default: 'Start Date'
-    },
-    // Denotes the Placeholder string for start date.
-    endLabel: {
-      type: String,
-      default: 'End Date'
-    },
-    // The string that gets placed between `startLabel` and `endLabel`
-    separatorLabel: {
-      type: String,
-      default: 'To'
-    },
-    presetLabel: {
-      type: String,
-      default: 'Presets'
-    },
-    // Button labels
-    buttonCancelLabel: {
-        type: String,
-        default: 'Cancel'
-    },
-    buttonApplyLabel: {
-        type: String,
-        default: 'Apply'
-    },
-    buttonResetLabel: {
-        type: String,
-        default: 'Reset'
-    },
     /**
      * Following values are all passable to vuetify's own datepicker
      * component.
@@ -162,7 +131,7 @@ export default {
     // Locale
     locale: {
       type: String,
-      default: 'en-us'
+      default: 'en-en'
     },
     firstDayOfWeek: {
       type: [String, Number],
@@ -227,10 +196,10 @@ export default {
       const end = this.displayFormat
         ? this.formatDate(this.value.end, this.displayFormat)
         : this.value.end;
-      return `${start}    ${this.separatorLabel}     ${end}`;
+      return `${start} ${this.$t('To')} ${end}`;
     },
     placeholder() {
-      return `${this.startLabel}    ${this.separatorLabel}    ${this.endLabel}`;
+      return `${this.$t('StartDate')} ${this.$t('To')} ${this.$t('EndDate')}`;
     },
     /**
      * If the value prop doesn't have any start value,
@@ -323,6 +292,9 @@ export default {
       });
     }
   },
+  mounted(){
+     this.$i18n.locale = this.locale
+  },
   watch: {
     // Watching to see if the menu is closed.
     menu(isOpen) {
@@ -337,69 +309,59 @@ export default {
   }
 };
 </script>
-<style scoped lang="stylus">
-.v-date-range__input-field >>> input {
-  text-align: center;
-}
-
-/* =============================================
-=            Menu Content            =
-============================================= */
-.v-date-range__content {
-  display: flex;
-
-  >>> .v-date-picker-table {
-    .v-btn {
-      border-radius: 0;
+<style scoped lang="scss">
+    .v-date-range__input-field >>> input {
+        text-align: center;
     }
-  }
-}
+    /* =============================================
+    =            Menu Content            =
+    ============================================= */
+    .v-date-range__content {
+        display: flex;
+    }
 
-/* =====  End of Menu Content  ====== */
-.v-date-range__pickers >>> .v-date-picker-table__events {
-  height: 100%;
-  width: 100%;
-  top: 0;
-  z-index: -1;
-}
+    .v-date-range__content >>> .v-date-picker-table .v-btn {
+        border-radius: 0;
+    }
+    /* =====  End of Menu Content  ====== */
+    .v-date-range__pickers >>> .v-date-picker-table__events {
+        height: 100%;
+        width: 100%;
+        top: 0;
+        z-index: -1;
+    }
+    /* =============================================
+    =            Date buttons            =
+    ============================================= */
+    .v-date-range__pickers >>> .v-date-picker-table table {
+        width: auto;
+        margin: auto;
+        border-collapse: collapse;
+    }
 
-/* =============================================
-=            Date buttons            =
-============================================= */
-.v-date-range__pickers >>> .v-date-picker-table table {
-  width: auto;
-  margin: auto;
-  border-collapse: collapse;
+    .v-date-range__pickers >>> .v-date-picker-table table th,
+    .v-date-range__pickers >>> .v-date-picker-table table td {
+        height: 32px;
+        width: 32px;
+    }
 
-  & th, & td {
-    height: 32px;
-    width: 32px;
-  }
-
-  & td {
-    .v-btn {
-      &.v-btn--outline {
+    .v-date-range__pickers >>> .v-date-picker-table table td .v-btn.v-btn--outline {
         border: none;
         box-shadow: 0 0 0 1px currentColor inset;
-      }
-
-      &.v-btn--active::before {
-        background-color: transparent !important;
-      }
     }
-  }
-}
 
-/* =====  End of Date buttons  ====== */
-/* =============================================
-=            Highlighting the even bubble dot            =
-============================================= */
-.v-date-range__pickers >>> .v-date-range__in-range {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  border-radius: 0;
-}
-
-/* =====  End of Highlighting the even bubble dot  ====== */
+    .v-date-range__pickers >>> .v-date-picker-table table td .v-btn.v-btn--active::before {
+        background-color: transparent !important;
+    }
+    /* =====  End of Date buttons  ====== */
+    /* =============================================
+    =            Highlighting the even bubble dot            =
+    ============================================= */
+    .v-date-range__pickers >>> .v-date-range__in-range {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+    /* =====  End of Highlighting the even bubble dot  ====== */
 </style>

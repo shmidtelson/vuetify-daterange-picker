@@ -1,7 +1,14 @@
 import Vue from 'vue';
-import './plugins/vuetify';
+import vuetify from '@/plugins/vuetify'
+import i18n from './i18n'
 import App from './App.vue';
+
+
 Vue.config.productionTip = false;
+
 new Vue({
-  render: h => h(App)
+  i18n,
+  vuetify,
+  render: h => h(App),
+  components: { App }
 }).$mount('#app');

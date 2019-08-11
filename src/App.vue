@@ -11,6 +11,7 @@
             :input-props="inputProps"
             :menu-props="menuProps"
             :presets="presets"
+            locale="ru-ru"
           >
             <h3 slot="title">Vuetify Dater Range Picker - Next</h3>
           </v-daterange>
