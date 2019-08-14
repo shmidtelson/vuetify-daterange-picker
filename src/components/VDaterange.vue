@@ -186,6 +186,13 @@
             };
         },
         computed: {
+            dict_lang() {
+                try{
+                    return require('../locales/' + this.locale + '.json')
+                }catch (e) {
+                    console.log('I am not may loaded locale. fix it please')
+                }
+            },
             inputValue() {
                 if (this.isValueEmpty) {
                     return '';
@@ -221,13 +228,6 @@
                         preset.range[1] === this.pickerEnd
                 );
             },
-            dict_lang() {
-                try{
-                    return require('../locales/' + this.locale + '.json')
-                }catch (e) {
-                    console.log('I am not may loaded locale. fix it please')
-                }
-            }
         },
         methods: {
             /**
