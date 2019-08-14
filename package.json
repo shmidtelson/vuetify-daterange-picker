@@ -13,7 +13,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "build:lib": "vue-cli-service build --target lib --name vuetify-daterange-picker ./src/components/index.js",
+    "build:lib": "vue-cli-service build --target lib --name vuetify-daterange-picker ./src/index.js",
     "test:unit": "vue-cli-service test:unit",
     "prepublish": "yarn build:lib"
   },
@@ -50,7 +50,6 @@
     "stylus-loader": "^3.0.2",
     "vue": "^2.6.10",
     "vue-cli-plugin-vuetify": "^0.4.6",
-    "vue-i18n": "^8.14.0",
     "vue-template-compiler": "2.6.10",
     "vuetify": "^2.0.5",
     "vuetify-loader": "^1.0.5"

@@ -1,11 +1,8 @@
-import VDaterange from './VDaterange';
-import i18n from '../i18n'
-
+import VDaterange from './components/VDaterange';
 const VuetifyDaterangePicker = {
-    install(Vue) {
-        Vue.use(i18n);
-        Vue.component(VDaterange.name, VDaterange);
-    }
+  install(Vue) {
+    Vue.component(VDaterange.name, VDaterange);
+  }
 };
 export default VuetifyDaterangePicker;
-export {VDaterange};
+export { VDaterange };
