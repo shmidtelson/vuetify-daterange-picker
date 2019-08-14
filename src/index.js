@@ -3,7 +3,7 @@ import i18n from '../i18n'
 
 const VuetifyDaterangePicker = {
     install(Vue) {
-        Vue.component(i18n);
+        Vue.use(i18n);
         Vue.component(VDaterange.name, VDaterange);
     }
 };
