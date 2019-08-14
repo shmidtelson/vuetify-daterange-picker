@@ -589,6 +589,17 @@ module.exports = function installComponents (component, components) {
 
 /***/ }),
 
+/***/ "67a7":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_index_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_lib_loader_js_ref_8_oneOf_1_3_node_modules_vuetify_loader_lib_loader_js_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_VDaterange_vue_vue_type_style_index_0_id_51c16406_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("7e2e");
+/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_index_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_lib_loader_js_ref_8_oneOf_1_3_node_modules_vuetify_loader_lib_loader_js_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_VDaterange_vue_vue_type_style_index_0_id_51c16406_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_index_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_lib_loader_js_ref_8_oneOf_1_3_node_modules_vuetify_loader_lib_loader_js_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_VDaterange_vue_vue_type_style_index_0_id_51c16406_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0__);
+/* unused harmony reexport * */
+ /* unused harmony default export */ var _unused_webpack_default_export = (_node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_index_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_lib_loader_js_ref_8_oneOf_1_3_node_modules_vuetify_loader_lib_loader_js_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_VDaterange_vue_vue_type_style_index_0_id_51c16406_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
 /***/ "6821":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -691,6 +702,13 @@ module.exports = function (exec) {
 /***/ (function(module) {
 
 module.exports = {"Presets":"Presets","Cancel":"Cancel","Apply":"Apply","Reset":"Reset","StartDate":"Start date","EndDate":"End date","To":"To"};
+
+/***/ }),
+
+/***/ "7e2e":
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
 
 /***/ }),
 
@@ -881,17 +899,6 @@ module.exports = !__webpack_require__("79e5")(function () {
 
 /***/ }),
 
-/***/ "9ed4":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_index_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_lib_loader_js_ref_8_oneOf_1_3_node_modules_vuetify_loader_lib_loader_js_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_VDaterange_vue_vue_type_style_index_0_id_d14780f6_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("ac1e");
-/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_index_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_lib_loader_js_ref_8_oneOf_1_3_node_modules_vuetify_loader_lib_loader_js_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_VDaterange_vue_vue_type_style_index_0_id_d14780f6_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_index_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_lib_loader_js_ref_8_oneOf_1_3_node_modules_vuetify_loader_lib_loader_js_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_VDaterange_vue_vue_type_style_index_0_id_d14780f6_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0__);
-/* unused harmony reexport * */
- /* unused harmony default export */ var _unused_webpack_default_export = (_node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_index_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_lib_loader_js_ref_8_oneOf_1_3_node_modules_vuetify_loader_lib_loader_js_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_VDaterange_vue_vue_type_style_index_0_id_d14780f6_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0___default.a); 
-
-/***/ }),
-
 /***/ "aa77":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -926,13 +933,6 @@ var trim = exporter.trim = function (string, TYPE) {
 
 module.exports = exporter;
 
-
-/***/ }),
-
-/***/ "ac1e":
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by mini-css-extract-plugin
 
 /***/ }),
 
@@ -1287,8 +1287,8 @@ if (typeof window !== 'undefined') {
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es6.function.name.js
 var es6_function_name = __webpack_require__("7f7f");
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"65b01132-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vuetify-loader/lib/loader.js!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/VDaterange.vue?vue&type=template&id=d14780f6&scoped=true&
-var VDaterangevue_type_template_id_d14780f6_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"v-date-range"},[_c('v-menu',_vm._b({attrs:{"close-on-content-click":false,"offset-y":""},scopedSlots:_vm._u([{key:"activator",fn:function(ref){
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"5dd4ae5d-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vuetify-loader/lib/loader.js!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/VDaterange.vue?vue&type=template&id=51c16406&scoped=true&
+var VDaterangevue_type_template_id_51c16406_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"v-date-range"},[_c('v-menu',_vm._b({attrs:{"close-on-content-click":false,"offset-y":""},scopedSlots:_vm._u([{key:"activator",fn:function(ref){
 var on = ref.on;
 return [_c('v-text-field',_vm._g(_vm._b({staticClass:"v-date-range__input-field",attrs:{"value":_vm.inputValue,"readonly":"","disabled":_vm.disabled,"placeholder":_vm.placeholder}},'v-text-field',_vm.inputProps,false),on))]}}]),model:{value:(_vm.menu),callback:function ($$v) {_vm.menu=$$v},expression:"menu"}},'v-menu',_vm.menuProps,false),[_c('v-card',{staticClass:"v-date-range__menu-content"},[_c('v-card-text',[_c('div',{class:{
           'v-date-range__pickers': true,
@@ -1297,7 +1297,7 @@ return [_c('v-text-field',_vm._g(_vm._b({staticClass:"v-date-range__input-field"
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/VDaterange.vue?vue&type=template&id=d14780f6&scoped=true&
+// CONCATENATED MODULE: ./src/components/VDaterange.vue?vue&type=template&id=51c16406&scoped=true&
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es6.number.constructor.js
 var es6_number_constructor = __webpack_require__("c5f6");
@@ -1493,7 +1493,8 @@ var defaultDate = Object(external_date_fns_["format"])(new Date(), isoFormat);
       pickerStart: this.value.start,
       pickerEnd: this.value.end,
       highlightDates: [],
-      highlightClasses: {}
+      highlightClasses: {},
+      dict_lang: {}
     };
   },
   computed: {
@@ -1530,13 +1531,6 @@ var defaultDate = Object(external_date_fns_["format"])(new Date(), isoFormat);
       return this.presets.map(function (preset) {
         return preset.range[0] === _this.pickerStart && preset.range[1] === _this.pickerEnd;
       });
-    },
-    dict_lang: function dict_lang() {
-      try {
-        return __webpack_require__("231a")("./" + this.locale + ".json");
-      } catch (e) {
-        console.log('I am not may loaded locale. fix it please');
-      }
     }
   },
   methods: {
@@ -1609,7 +1603,17 @@ var defaultDate = Object(external_date_fns_["format"])(new Date(), isoFormat);
         start: this.pickerStart,
         end: this.pickerEnd
       });
+    },
+    loadLocale: function loadLocale() {
+      try {
+        this.dict_lang = __webpack_require__("231a")("./" + this.locale + ".json");
+      } catch (e) {
+        console.log('I am not may loaded locale. fix it please');
+      }
     }
+  },
+  mounted: function mounted() {
+    this.loadLocale();
   },
   watch: {
     // Watching to see if the menu is closed.
@@ -1626,8 +1630,8 @@ var defaultDate = Object(external_date_fns_["format"])(new Date(), isoFormat);
 });
 // CONCATENATED MODULE: ./src/components/VDaterange.vue?vue&type=script&lang=js&
  /* harmony default export */ var components_VDaterangevue_type_script_lang_js_ = (VDaterangevue_type_script_lang_js_); 
-// EXTERNAL MODULE: ./src/components/VDaterange.vue?vue&type=style&index=0&id=d14780f6&scoped=true&lang=scss&
-var VDaterangevue_type_style_index_0_id_d14780f6_scoped_true_lang_scss_ = __webpack_require__("9ed4");
+// EXTERNAL MODULE: ./src/components/VDaterange.vue?vue&type=style&index=0&id=51c16406&scoped=true&lang=scss&
+var VDaterangevue_type_style_index_0_id_51c16406_scoped_true_lang_scss_ = __webpack_require__("67a7");
 
 // CONCATENATED MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
 /* globals __VUE_SSR_CONTEXT__ */
@@ -9685,11 +9689,11 @@ const dirtyTypes = ['color', 'file', 'time', 'date', 'datetime-local', 'week', '
 
 var component = normalizeComponent(
   components_VDaterangevue_type_script_lang_js_,
-  VDaterangevue_type_template_id_d14780f6_scoped_true_render,
+  VDaterangevue_type_template_id_51c16406_scoped_true_render,
   staticRenderFns,
   false,
   null,
-  "d14780f6",
+  "51c16406",
   null
   
 )

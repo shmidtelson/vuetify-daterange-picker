@@ -182,17 +182,11 @@
                 pickerStart: this.value.start,
                 pickerEnd: this.value.end,
                 highlightDates: [],
-                highlightClasses: {}
+                highlightClasses: {},
+                dict_lang: {}
             };
         },
         computed: {
-            dict_lang() {
-                try{
-                    return require('../locales/' + this.locale + '.json')
-                }catch (e) {
-                    console.log('I am not may loaded locale. fix it please')
-                }
-            },
             inputValue() {
                 if (this.isValueEmpty) {
                     return '';
@@ -297,7 +291,17 @@
                     start: this.pickerStart,
                     end: this.pickerEnd
                 });
+            },
+            loadLocale() {
+                try {
+                    this.dict_lang = require('../locales/' + this.locale + '.json')
+                } catch (e) {
+                    console.log('I am not may loaded locale. fix it please')
+                }
             }
+        },
+        mounted() {
+            this.loadLocale();
         },
         watch: {
             // Watching to see if the menu is closed.
